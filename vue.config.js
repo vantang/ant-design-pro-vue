@@ -86,7 +86,10 @@ const vueConfig = {
 
   devServer: {
     // development server port 8000
-    port: 8000
+    host: '0.0.0.0',
+    port: 8888,
+    disableHostCheck: true,
+    hot: true
     // If you want to turn on the proxy, please remove the mockjs /src/main.jsL11
     // proxy: {
     //   '/api': {
